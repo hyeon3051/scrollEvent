@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 1000vh;
+        }
+
+        .container {
+            perspective: 1000px;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            transform-style: preserve-3d;
+        }
+        .wrapper{
+            position: absolute;
+            transform-style: preserve-3d;
+            transform:translateZ(-500vw);
+        }
+        .image{
+            width:100vw;
+            height:100vh;
+            position:fixed;
+            background: url("./인터렉티브-홈페이지-bg.jpg");
+            background-size: cover;
+        }
+        .logo{
+            width:100px;
+            height:100px;
+
+            left:5vw;
+            position: fixed;
+            background:url("./인터렉티브-홈페이지-logo.png");
+            z-index:3;
+            background-size: cover;
+        }
+
+        div[class^=item] {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        .item1 {
+            transform: translateZ(400vw)
+        }
+
+        .item2 {
+            transform: translateZ(200vw)
+        }
+
+        .item3 {
+            transform: translateZ(0)
+        }
+
+        .item4 {
+
+            transform: translateZ(-200vw)
+        }
+
+        .item5 {
+
+            transform: translateZ(-400vw)
+        }
+    </style>
+</head>
+
+<body>
+<div class="image"></div>
+<div class="logo"></div>
+    <div class="container">
+        <div class="wrapper">
+
+        <div class="card-left"></div>
+        <div class="card-right"></div>
+        <div class="item1"><img src="./인터렉티브-홈페이지-1.png" alt=""></div>
+        <div class="item2"><img src="./인터렉티브-홈페이지-2.png" alt=""></div>
+        <div class="item3"><img src="./인터렉티브-홈페이지-3.png" alt=""></div>
+        <div class="item4"><img src="./인터렉티브-홈페이지-4.png" alt=""></div>
+        <div class="item5"><img src="./인터렉티브-홈페이지-5.png" alt=""></div>
+    </div>
+    </div>
+    <script src="scroll.js"></script>
+</body>
+
+</html>
