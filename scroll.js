@@ -18,8 +18,8 @@ let zMove = 0;
     }
 
     function onMouseMove(event) {
-        mousePosx = -1 + (event.clientX / window.innerWidth) * 2;
-        mousePosy = 1 - (event.clientY / window.innerHeight) * 2;
+        mousePosx = -1 + (event.clientX / window.innerWidth) * 10;
+        mousePosy = 1 - (event.clientY / window.innerHeight) * 10;
 
         StageScroll.style.top = `${mousePosx}em`
         StageScroll.style.left = `${mousePosy}em`
