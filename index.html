@@ -86,7 +86,7 @@
             z-index: 4;
             position: fixed;
             left: 5%;
-            bottom: 5%;
+            bottom: 10%;
             font-size: 1.6rem;
         }
 
@@ -129,6 +129,20 @@
             font-weight: 500;
             z-index: 3;
         }
+
+        .menu>ul {
+            position: fixed;
+            z-index: 4;
+            display: flex;
+            right: 10%;
+            top: 5%;
+            font-size: 1 rem;
+        }
+
+        .menu ul li {
+            margin-left: 1rem;
+            list-style: none;
+        }
     </style>
 </head>
 
@@ -142,6 +156,15 @@
             <li><a href="javascript:moveTo(0);">player3</a></li>
             <li><a href="javascript:moveTo(200);">player4</a></li>
             <li><a href="javascript:moveTo(400);">player5</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
+            <li>menu</li>
         </ul>
     </div>
     <div class="container">
